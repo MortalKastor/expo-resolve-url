@@ -32,7 +32,9 @@ class RedirectInterceptor: NSObject, URLSessionTaskDelegate {
   func fetchLocation(from url: URL, completion: @escaping (String?) -> Void) {
     self.completion = completion
     let session = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
-    let task = session.dataTask(with: url) { _, _, error in
+    var request = URLRequest(url: url)
+    request.httpMethod = "HEAD"
+    let task = session.dataTask(with: request) { _, _, error in
       if let error = error as? URLError, error.code == .cancelled {
         return // Ignore cancellation after intercepting redirect
       }
