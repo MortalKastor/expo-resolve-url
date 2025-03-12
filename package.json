@@ -1,0 +1,45 @@
+{
+  "name": "expo-resolve-url",
+  "version": "1.0.0",
+  "description": "Get the destination URL of a redirect link (like marketing or shortened links) without following it",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module",
+    "open:ios": "xed example/ios",
+    "open:android": "open -a \"Android Studio\" example/android"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "expo-resolve-url",
+    "ResolveUrl"
+  ],
+  "repository": "https://github.com/MortalKastor/expo-resolve-url",
+  "bugs": {
+    "url": "https://github.com/MortalKastor/expo-resolve-url/issues"
+  },
+  "author": "Thibaut Boustany <thibaut@kastor.fr> (https://github.com/MortalKastor)",
+  "license": "MIT",
+  "homepage": "https://github.com/MortalKastor/expo-resolve-url#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "~18.3.12",
+    "expo": "~52.0.0",
+    "expo-module-scripts": "^4.0.3",
+    "prettier": "3.5.3",
+    "react-native": "0.76.0"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+}
