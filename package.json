@@ -1,6 +1,6 @@
 {
   "name": "expo-resolve-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get the destination URL of a redirect link (like marketing or shortened links) without following it",
   "main": "build/index.js",
   "types": "build/index.d.ts",
